@@ -40,3 +40,5 @@ HOW TO USE: :bowtie:
 5. RUN mysql files located in sql folder(SOURCE sql/employee_db.sql, SOURCE sql/seed.sql)
 6. lunch server (node employee_tracker.js)
 7. follow the prompts.
+<br/>
+Video (https://youtu.be/fZO7_tD5mjw)<br/>
