@@ -1,5 +1,4 @@
-# Emploee-Tracker-HG
-
+# Emploee-Tracker-HG #
 
 
 USER Story: 
@@ -8,39 +7,31 @@ I WANT to be able to view and manage the departments, roles, and employees in my
 SO THAT I can organize and plan my business
 
 
-SCHEMA: 
+## SCHEMA ##
 
-Department
+Department:
 
-id: INT PRIMARY KEY
-
-name: VARCHAR(30) to hold department name
+* id: INT PRIMARY KEY
+* name: VARCHAR(30) to hold department name
 
 
 Role
 
-id: INT PRIMARY KEY
-
-title: VARCHAR(30) to hold role title
-
-salary: DECIMAL to hold role salary
-
-department_id: INT to hold reference to department role belongs to
+* id: INT PRIMARY KEY
+* title: VARCHAR(30) to hold role title
+* salary: DECIMAL to hold role salary
+* department_id: INT to hold reference to department role belongs to
 
 
 Employee
 
-id: INT PRIMARY KEY
+* id: INT PRIMARY KEY
+* first_name: VARCHAR(30) to hold employee first name
+* last_name: VARCHAR(30) to hold employee last name
+* role_id: INT to hold reference to employee role
+* manager_id: INT to hold reference to another employee that is manager of the current employee. This field may be null if the employee has no manager.
 
-first_name: VARCHAR(30) to hold employee first name
-
-last_name: VARCHAR(30) to hold employee last name
-
-role_id: INT to hold reference to employee role
-
-manager_id: INT to hold reference to another employee that is manager of the current employee. This field may be null if the employee has no manager.
-
-HOW TO USE: 
+HOW TO USE: :bowtie:
 
 1. Install npm (npm install )
 2. Install Inquirer (npm install inquirer)
